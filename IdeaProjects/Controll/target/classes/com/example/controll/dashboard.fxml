@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controll.DashboardController">
+   <children>
+      <AnchorPane prefHeight="73.0" prefWidth="600.0" style="-fx-background-color: #E74C3C#E74C3C #E74C3C#E74C3C;">
+         <children>
+            <ImageView fx:id="dashboardImageView" fitHeight="73.0" fitWidth="100.0" layoutX="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/icons8-dashboard-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="143.0" layoutY="18.0" text="管理機能" textFill="WHITE">
+               <font>
+                  <Font name="YuGothic Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="userTable" layoutY="73.0" prefHeight="327.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="idCollumn" prefWidth="150.0" text="ID_ACCOUNT" />
+          <TableColumn fx:id="firstnameCollumn" prefWidth="150.0" text="FIRSTNAME" />
+            <TableColumn fx:id="lastnameCollumn" prefWidth="150.0" text="LASTNAME" />
+            <TableColumn fx:id="usernameCollumn" prefWidth="150.0" text="USERNAME" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
